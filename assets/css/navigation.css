@@ -1,0 +1,21 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 16%;
+    min-height: 100vh;
+    border-right: 1px solid #999;
+}
+.navigation a {
+    font-size: 14px;
+    color: #333;
+    padding: 14px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+}

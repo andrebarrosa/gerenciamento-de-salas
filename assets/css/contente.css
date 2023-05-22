@@ -1,0 +1,52 @@
+.client-table {
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+.client-table {
+    border-radius: 6px;
+}
+
+#form-new-client {
+    display: none;
+}
+
+.form-boxs-clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box-item {
+    display: flex;
+}
+
+.form-left,
+.form-right {
+    width: 50%;
+    padding: 30px;
+}
+
+.form-left label,
+.form-right label {
+    font-size: 14px;
+}
+
+.form-left input,
+.form-right input {
+    width: 50%;
+}
+
+.box-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-right {
+    width: 50%;
+}
+
+/* Ver cliente */
+.text-min {
+    font-size: 4px;
+}

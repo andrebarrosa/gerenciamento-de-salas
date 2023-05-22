@@ -1,0 +1,15 @@
+.card-box {
+    cursor: pointer;
+}
+
+
+.card-item {
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.card-item p {
+    font-size: 30px;
+    font-weight: bold;
+}
