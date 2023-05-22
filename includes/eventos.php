@@ -1,7 +1,7 @@
 <div class="client-table p-2" id="clientTable">
     <button id="btn-new-client" class="btn btn-success btn-sm my-3">Novo Evento</button>
 
-    <h5 id="title-client">Eventos / Dashbord</h5>
+    <h5 id="title-client">Eventos / <a href="?page=index.php">Dashboard</a></h5>
     <div id="new-table-client">
    
     </div>
