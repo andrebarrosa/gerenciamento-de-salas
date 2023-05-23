@@ -1,8 +1,15 @@
 <?php
+include("config.php");
 switch (@$_REQUEST["page"]) {
     case "salas":
         include("salas.php");
         break;
+
+    case "salvar_salas";
+        include("salvar_salas.php");
+        break;
+
+
     case "eventos":
         include("eventos.php");
         break;
