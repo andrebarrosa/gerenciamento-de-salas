@@ -12,11 +12,13 @@
 
                 if($res == true) {
                     print "<script>alert('Sala cadastrada com sucesso!');</script>";
-                    // print "<script>location.href='?page=salas';</script>";
+                    print "<script>location.href='?page=salas';</script>";
                 } else {
                     print "<script>alert('Não foi possível cadastrar uma nova sala.');</script>";
-                    // print "<script>location.href='?page=salas';</script>"; 
+                    print "<script>location.href='?page=salas';</script>"; 
                 }
+
+
             break;
 
         case "editar":

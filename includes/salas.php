@@ -36,7 +36,7 @@
         ?>
     </div>
     <div id="form-new-client">
-        <form action="?page=salvar_cliente" method="POST" class="form-boxs-clients">
+        <form action="?page=salvar_salas" method="POST" class="form-boxs-clients">
             <input type="hidden" name="acao" value="cadastrar">
             <h5>CADASTRO DE SALAS</h5>
 
