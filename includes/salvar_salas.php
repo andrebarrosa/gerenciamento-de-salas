@@ -19,6 +19,10 @@
                 }
 
 
+    // Fechando a conexão com o banco de dados
+    $conn->close();
+
+
             break;
 
         case "editar":

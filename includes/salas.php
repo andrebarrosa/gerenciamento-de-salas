@@ -24,7 +24,7 @@
                         print "<td>".$row->capacidade_max."</td>";
                         print "<td>".$row->descricao."</td>";
                         print "<td>
-                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button onclick=\"location.href='?page=editar_salas&id".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";

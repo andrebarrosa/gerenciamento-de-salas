@@ -2,7 +2,7 @@
      <div onclick="window.location.href='?page=salas'" class='card-item d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Salas</h5>
-               <p class="text-center">21</p>
+               <p class="text-center">0</p>
           </div>
           <div class="icon">
                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">

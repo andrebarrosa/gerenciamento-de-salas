@@ -5,8 +5,12 @@ switch (@$_REQUEST["page"]) {
         include("salas.php");
         break;
 
-    case "salvar_salas";
+    case "salvar_salas":
         include("salvar_salas.php");
+        break;
+
+    case "editar_salas":
+        include("editar_salas.php");
         break;
 
 
