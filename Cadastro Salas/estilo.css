@@ -1,0 +1,56 @@
+.container {
+    width: 700px;
+}
+
+body {
+    background-color: #F15A25;
+    color: orange;
+}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#header {
+    color: white;
+    margin: 25px;
+}
+
+#hrheader {
+    color: black;
+    margin: 25px;
+}
+
+b {
+    color: white;
+}
+
+.example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .example-draggable {
+    background-color: #4AAE9B;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .example-dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+  }
