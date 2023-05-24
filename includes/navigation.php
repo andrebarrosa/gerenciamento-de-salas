@@ -1,4 +1,4 @@
-<div class="navigation">
+<div class="navigation shadow p-3 mb-5 bg-white rounded">
     <a href="index.php">
         <span class="me-2 ms-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">

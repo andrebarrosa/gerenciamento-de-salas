@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container  shadow p-3 mb-5 bg´white rounded">
     <div class="row">
         <div class="col-12 py-2">
             <button onclick="menuToggle()" class="ms-3 text-dark">

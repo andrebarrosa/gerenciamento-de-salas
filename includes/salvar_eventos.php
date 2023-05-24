@@ -3,7 +3,7 @@
     switch ($_POST["acao"]) {
         case "cadastrar":
                 $nome = $_POST["nome"];
-                $data_hota_ini = $_POST["data_hota_ini"];
+                $data_hota_ini = $_POST["data_hora_ini"];
                 $data_hora_fim = $_POST["data_hora_fim"];
                 $data_hora_fim = $_POST["data_criacao"];
 

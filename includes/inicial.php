@@ -2,7 +2,14 @@
      <div onclick="window.location.href='?page=salas'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Salas</h5>
-               <p class="text-center">0</p>
+               <?php
+               $sql = "SELECT COUNT(*) AS count FROM dim_salas";
+               $res = $conn->query($sql);
+               $row = $res->fetch_assoc();
+               $qtd = $row['count'];
+
+               echo "<p class='event-count'>" . $qtd . "</p>";
+          ?>
           </div>
           <div class="icon">
                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
@@ -13,7 +20,14 @@
      <div onclick="window.location.href='?page=eventos'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Eventos</h5>
-               <p class="text-center">12</p>
+               <?php
+               $sql = "SELECT COUNT(*) AS count FROM fatos_eventos";
+               $res = $conn->query($sql);
+               $row = $res->fetch_assoc();
+               $qtd = $row['count'];
+
+               echo "<p class='event-count'>" . $qtd . "</p>";
+          ?>
           </div>
           <div class="icon">
                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
@@ -24,7 +38,14 @@
      <div onclick="window.location.href='?page=responsavel'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Responsavel</h5>
-               <p class="text-center">32</p>
+               <?php
+               $sql = "SELECT COUNT(*) AS count FROM dim_responsavel";
+               $res = $conn->query($sql);
+               $row = $res->fetch_assoc();
+               $qtd = $row['count'];
+
+               echo "<p class='event-count'>" . $qtd . "</p>";
+          ?>
           </div>
           <div class="icon">
                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
@@ -57,12 +78,127 @@
      </div>
     
 </div>
-<div class='card-box'>
-     <div class='card-table'>Tabela</div>
+<div class='card-box shadow p-3 mb-5 bg-white rounded'>
+     <div class='card-table'>
+         <div class="detalhes-salas">
+         <h5>Salas</h5>
+         <?php
+            $sql = "SELECT * FROM dim_salas";
+
+            $res = $conn->query($sql);
+
+            $qtd = $res->num_rows;
+
+            if($qtd > 0){
+                print "<table class='table table-hover table-striped table-bordered shadow p-3 mb-5 bg-white rounded'>";
+                    print "<tr>";
+                        print "<th>Nome</th>";
+                        print "<th>Capacidade Maxima</th>";
+                        print "<th>Descrição</th>";
+                        print "<th>Ações</th>";
+                    print "</tr>";
+                while($row = $res->fetch_object()) {
+                    print "<tr>";
+                        print "<td>".$row->nome."</td>";
+                        print "<td>".$row->capacidade_max."</td>";
+                        print "<td>".$row->descricao."</td>";
+                        print "<td>
+                                    <button onclick=\"location.href='?page=editar_salas&id".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
+                                    <button class='btn btn-danger btn-sm'>Excluir</button>
+                              </td>";
+                    print "<tr>";
+                }
+                print "</table>";
+            } else {
+                print "<p class='alert alert-danger'> Não encontrou resultados</p>";
+            }
+        ?>
+        <h5>Eventos</h5>
+
+<?php
+            $sql = "SELECT * FROM fatos_eventos";
+
+            $res = $conn->query($sql);
+
+            $qtd = $res->num_rows;
+
+            if($qtd > 0){
+                print "<table class='table table-hover table-striped table-bordered shadow p-3 mb-5 bg-white rounded'>";
+                    print "<tr>";
+                        print "<th>Nome</th>";
+                        print "<th>Capacidade Maxima</th>";
+                        print "<th>Descrição</th>";
+                        print "<th>Ações</th>";
+                    print "</tr>";
+                while($row = $res->fetch_object()) {
+                    print "<tr>";
+                        print "<td>".$row->nome."</td>";
+                        print "<td>".$row->data_hora_ini."</td>";
+                        print "<td>".$row->data_hora_fim."</td>";
+                        print "<td>".$row->data_criacao."</td>";
+                        print "<td>
+                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button class='btn btn-danger btn-sm'>Excluir</button>
+                              </td>";
+                    print "<tr>";
+                }
+                print "</table>";
+            } else {
+                print "<p class='alert alert-danger'> Não encontrou resultados</p>";
+            }
+        ?>
+        <h5>Responsaveis</h5>
+
+<?php
+            $sql = "SELECT * FROM dim_responsavel";
+
+            $res = $conn->query($sql);
+
+            $qtd = $res->num_rows;
+
+            if($qtd > 0){
+                print "<table class='table table-hover table-striped table-bordered shadow p-3 mb-5 bg-white rounded'>";
+                    print "<tr>";
+                        print "<th>Nome</th>";
+                        print "<th>Email</th>";
+                        print "<th>DDD</th>";
+                        print "<th>Telefone</th>";
+                        print "<th>Data de Criação</th>";
+                        print "<th>Data de Edição</th>";
+                        print "<th>Foto</th>";
+                        print "<th>Usuário</th>";
+                        print "<th>Senha</th>";
+                        print "<th>Ações</th>";
+                    print "</tr>";
+                while($row = $res->fetch_object()) {
+                    print "<tr>";
+                        print "<td>".$row->nome."</td>";
+                        print "<td>".$row->email."</td>";
+                        print "<td>".$row->ddd."</td>";
+                        print "<td>".$row->telefone."</td>";
+                        print "<td>".$row->data_criacao."</td>";
+                        print "<td>".$row->data_edicao."</td>";
+                        print "<td>".$row->foto."</td>";
+                        print "<td>".$row->usuario."</td>";
+                        print "<td>".$row->senha."</td>";
+                        print "<td>
+                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button class='btn btn-danger btn-sm'>Excluir</button>
+                              </td>";
+                    print "<tr>";
+                }
+                print "</table>";
+            } else {
+                print "<p class='alert alert-danger'> Não encontrou resultados</p>";
+            }
+        ?>
+         </div>
+         <div class="detalhes-eventos">
+
+         </div>
+     </div>
 </div>
 
-<div class='card-box'>
-     <div class='card-infor'>Informações</div>
-</div>
+
 </div>
 </div>

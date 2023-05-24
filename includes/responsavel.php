@@ -11,7 +11,7 @@
             $qtd = $res->num_rows;
 
             if($qtd > 0){
-                print "<table class='table table-hover table-striped table-bordered'>";
+                print "<table class='table table-hover table-striped table-bordered shadow p-3 mb-5 bg-white rounded'>";
                     print "<tr>";
                         print "<th>Nome</th>";
                         print "<th>Email</th>";

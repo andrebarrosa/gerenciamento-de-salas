@@ -4,25 +4,27 @@
     <h5 id="title-client">Eventos /<a href="?page=index.php">Dashboard</a></h5>
     <div id="new-table-client">
     <?php
-            $sql = "SELECT * FROM dim_salas";
+            $sql = "SELECT * FROM fatos_eventos";
 
             $res = $conn->query($sql);
 
             $qtd = $res->num_rows;
 
             if($qtd > 0){
-                print "<table class='table table-hover table-striped table-bordered'>";
+                print "<table class='table table-hover table-striped table-bordered shadow p-3 mb-5 bg-white rounded'>";
                     print "<tr>";
                         print "<th>Nome</th>";
-                        print "<th>Capacidade Maxima</th>";
-                        print "<th>Descrição</th>";
+                        print "<th>Data do Início</th>";
+                        print "<th>Data do Termino</th>";
+                        print "<th>Data da Criação</th>";
                         print "<th>Ações</th>";
                     print "</tr>";
                 while($row = $res->fetch_object()) {
                     print "<tr>";
                         print "<td>".$row->nome."</td>";
-                        print "<td>".$row->capacidade_max."</td>";
-                        print "<td>".$row->descricao."</td>";
+                        print "<td>".$row->data_hora_ini."</td>";
+                        print "<td>".$row->data_hora_fim."</td>";
+                        print "<td>".$row->data_criacao."</td>";
                         print "<td>
                                     <button class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
@@ -35,7 +37,7 @@
             }
         ?>
     </div>
-    <div id="form-new-client">
+    <div id="form-new-client" class="shadow p-3 mb-5 bg-white rounded">
         <form action="?page=salvar_salas" method="POST" class="form-boxs-clients">
             <input type="hidden" name="acao" value="cadastrar">
             <h5>CADASTRO DE EVENTOS</h5>
@@ -51,7 +53,7 @@
 
                     <div class="mt-2 box-form">
                         <label for="">Data e Hora de Início</label>
-                        <input type="date" class="form-control" name="data_hora_inicio">
+                        <input type="date" class="form-control" name="data_hora_ini">
                     </div>
 
                     <div class="mt-2 box-form">

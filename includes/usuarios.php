@@ -1,4 +1,4 @@
-<div class="client-table p-2" id="clientTable">
+<div class="client-table p-2 shadow p-3 mb-5 bg-white rounded" id="clientTable">
     <button id="btn-new-client" class="btn btn-success btn-sm my-3">Responsaveis</button>
 
     <h5 id="title-client">Usuários / <a href="?page=index.php">Dashboard</a></h5>
