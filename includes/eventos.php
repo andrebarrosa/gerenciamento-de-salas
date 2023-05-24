@@ -27,7 +27,8 @@
                         print "<td>".$row->data_criacao."</td>";
                         print "<td>
                                     <button onclick=\"location.href='?page=editar_eventos&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
-                                    <button class='btn btn-danger btn-sm'>Excluir</button>
+                                    <button onclick=\"if(confirm('Realmente deseja excluir?')){location.href='?page=salvar_eventos&acao=excluir&id=".$row->id."';}else{false;}\" class='btn btn-danger btn-sm'>Excluir</button>
+
                               </td>";
                     print "<tr>";
                 }
@@ -38,7 +39,7 @@
         ?>
     </div>
     <div id="form-new-client" class="shadow p-3 mb-5 bg-white rounded">
-        <form action="?page=salvar_salas" method="POST" class="form-boxs-clients">
+        <form action="?page=salvar_eventos" method="POST" class="form-boxs-clients">
             <input type="hidden" name="acao" value="cadastrar">
             <h5>CADASTRO DE EVENTOS</h5>
 

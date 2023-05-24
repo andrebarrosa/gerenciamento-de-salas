@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="btn-form my-5 d-flex justify-content-center">
-                    <button class="btn btn-primary btn-sm me-5">Editar  sala</button>
+                    <button class="btn btn-primary btn-sm me-5">Editar sala</button>
                     <a href="?page=index.php" class="btn btn-warning btn-sm">Voltar</a>
                 </div>
 

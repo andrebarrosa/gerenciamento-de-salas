@@ -16,6 +16,19 @@ switch (@$_REQUEST["page"]) {
     case "eventos":
         include("eventos.php");
         break;
+
+        case "salvar_eventos":
+            include("salvar_eventos.php");
+        break;
+
+        case "editar_eventos":
+            include("editar_eventos.php");
+        break;
+
+
+
+
+
     case "responsavel":
         include("responsavel.php");
         break;
