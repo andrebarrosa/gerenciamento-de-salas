@@ -36,8 +36,8 @@
                         print "<td>".$row->usuario."</td>";
                         print "<td>".$row->senha."</td>";
                         print "<td>
-                                    <button onclick=\"location.href='?page=editar_responsavel&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
-                                    <button class='btn btn-danger btn-sm'>Excluir</button>
+                        <button onclick=\"location.href='?page=editar_responsavel&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
+                        <button onclick=\"if(confirm('Realmente deseja excluir?')){location.href='?page=salvar_responsavel&acao=excluir&id=".$row->id."';}else{false;}\" class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";
                 }
@@ -48,7 +48,7 @@
         ?>
     </div>
     <div id="form-new-client">
-        <form action="?page=salvar_salas" method="POST" class="form-boxs-clients">
+        <form action="?page=salvar_responsavel" method="POST" class="form-boxs-clients">
             <input type="hidden" name="acao" value="cadastrar">
             <h5>CADASTRO DE RESPONDAVELS</h5>
 

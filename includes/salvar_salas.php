@@ -37,9 +37,7 @@
                 print "<script>alert('Não foi possível editar uma nova sala.');</script>";
                 print "<script>location.href='?page=salas';</script>"; 
             }
-    
-            break;
-
+            
             break;
 
         case "excluir":
@@ -48,7 +46,7 @@
                 $res = $conn->query($sql);
 
                 if($res == true) {
-                    print "<script>alert('Sala excluida com sucesso!');</script>";
+                    print "<script>alert('Sala excluida!');</script>";
                     print "<script>location.href='?page=salas';</script>";
                 } else {
                     print "<script>alert('Não foi possível excluir sala.');</script>";

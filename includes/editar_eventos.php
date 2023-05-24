@@ -5,7 +5,7 @@
 ?>
 
 <form action="?page=salvar_eventos" method="POST" class="form-boxs-clients">
-            <input type="hidden" name="acao" value="cadastrar">
+            <input type="hidden" name="acao" value="editar">
             <input type="hidden" name="id" value="<?php  print $row->id;?>">
             <h5>CADASTRO DE EVENTOS</h5>
 
