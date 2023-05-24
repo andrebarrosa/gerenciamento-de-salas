@@ -9,6 +9,7 @@
                $qtd = $row['count'];
 
                echo "<p class='event-count'>" . $qtd . "</p>";
+
           ?>
           </div>
           <div class="icon">
@@ -65,7 +66,7 @@
           </div>
      </div>
 
-     <div onclick="window.location.href='#'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='https://app.powerbi.com/singleSignOn?experience=power-bi&ru=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Freports%2Ff503ade8-17a7-40f1-885a-d1264663d356%2FReportSectionadfd8ed6b9c79052c8c5%3Fexperience%3Dpower-bi%26noSignUpCheck%3D1'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Relatórios</h5>
                <p class="text-center">0</p>
@@ -103,7 +104,7 @@
                         print "<td>".$row->capacidade_max."</td>";
                         print "<td>".$row->descricao."</td>";
                         print "<td>
-                                    <button onclick=\"location.href='?page=editar_salas&id".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
+                                    <button onclick=\"location.href='?page=editar_salas&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";
@@ -137,7 +138,7 @@
                         print "<td>".$row->data_hora_fim."</td>";
                         print "<td>".$row->data_criacao."</td>";
                         print "<td>
-                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button onclick=\"location.href='?page=editar_eventos&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";
@@ -182,7 +183,7 @@
                         print "<td>".$row->usuario."</td>";
                         print "<td>".$row->senha."</td>";
                         print "<td>
-                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button onclick=\"location.href='?page=editar_responsavel&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";
@@ -202,3 +203,12 @@
 
 </div>
 </div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

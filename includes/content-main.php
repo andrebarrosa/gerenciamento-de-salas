@@ -10,10 +10,9 @@ switch (@$_REQUEST["page"]) {
         break;
 
     case "editar_salas":
-        include("editar_salas.php");
+            include("editar_salas.php");
         break;
-
-
+  
     case "eventos":
         include("eventos.php");
         break;

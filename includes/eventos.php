@@ -26,7 +26,7 @@
                         print "<td>".$row->data_hora_fim."</td>";
                         print "<td>".$row->data_criacao."</td>";
                         print "<td>
-                                    <button class='btn btn-warning btn-sm'>Editar</button>
+                                    <button onclick=\"location.href='?page=editar_eventos&id=".$row->id."';\" class='btn btn-warning btn-sm'>Editar</button>
                                     <button class='btn btn-danger btn-sm'>Excluir</button>
                               </td>";
                     print "<tr>";
