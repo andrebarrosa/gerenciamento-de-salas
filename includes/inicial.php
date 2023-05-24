@@ -1,5 +1,5 @@
 <div class='card-box d-flex justify-content-between'>
-     <div onclick="window.location.href='?page=salas'" class='card-item d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='?page=salas'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Salas</h5>
                <p class="text-center">0</p>
@@ -10,7 +10,7 @@
                </svg>
           </div>
      </div>
-     <div onclick="window.location.href='?page=eventos'" class='card-item d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='?page=eventos'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Eventos</h5>
                <p class="text-center">12</p>
@@ -21,7 +21,7 @@
                </svg>
           </div>
      </div>
-     <div onclick="window.location.href='?page=responsavel'" class='card-item d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='?page=responsavel'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Responsavel</h5>
                <p class="text-center">32</p>
@@ -32,7 +32,7 @@
                </svg>
           </div>
      </div>
-     <div onclick="window.location.href='?page=usuarios'" class='card-item d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='?page=usuarios'" class='card-item d-flex shadow p-3 mb-5 bg-white rounded justify-content-around align-items-center'>
           <div class="title">
                <h5>Usuário</h5>
                <p class="text-center">6</p>
@@ -44,7 +44,7 @@
           </div>
      </div>
 
-     <div onclick="window.location.href='#'" class='card-item d-flex justify-content-around align-items-center'>
+     <div onclick="window.location.href='#'" class='card-item shadow p-3 mb-5 bg-white rounded d-flex justify-content-around align-items-center'>
           <div class="title">
                <h5>Relatórios</h5>
                <p class="text-center">0</p>
