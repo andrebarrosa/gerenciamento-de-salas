@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/css/contente.css">
     <link rel="stylesheet" href="assets/css/content-main.css">
     <link rel="stylesheet" href="assets/css/inicial.css">
+    <link rel="stylesheet" href="assets/css/evento_responsive.css">
+    <link rel="stylesheet" href="assets/css/inicial_responsive.css">
+    <link rel="stylesheet" href="assets/css/responsavel_responsive.css">
+    <link rel="stylesheet" href="assets/css/salas_responsive.css">
+    <link rel="stylesheet" href="assets/css/inicial.css">
 </head>
 
 <body class="d-flex">
