@@ -50,3 +50,7 @@
 .text-min {
     font-size: 4px;
 }
+
+.small-height {
+    height: 80px;
+}

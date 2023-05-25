@@ -4,6 +4,7 @@
 
 .card-item {
     transition: box-shadow 0.3s;
+    width: 200px;
   }
   
   .card-item:hover {
@@ -13,4 +14,7 @@
 .card-item p {
     font-size: 30px;
     font-weight: bold;
+}
+.nn{
+  font-size: 6px;
 }

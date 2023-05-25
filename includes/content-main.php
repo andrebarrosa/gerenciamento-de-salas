@@ -11,6 +11,10 @@ switch (@$_REQUEST["page"]) {
         include("salvar_salas.php");
         break;
 
+        case "lista_salas":
+            include("lista_salas.php");
+            break;
+
     case "editar_salas":
             include("editar_salas.php");
         break;
@@ -27,6 +31,11 @@ switch (@$_REQUEST["page"]) {
         include("editar_eventos.php");
         break;
 
+        case "lista_eventos":
+            include("lista_eventos.php");
+            break;
+    
+
     case "responsavel":
         include("responsavel.php");
         break;
@@ -38,6 +47,10 @@ switch (@$_REQUEST["page"]) {
     case "editar_responsavel":
         include("editar_responsavel.php");
         break;
+
+        case "lista_responsavel":
+            include("lista_responsavel.php");
+            break;
 
         
     case "usuarios":

@@ -18,9 +18,8 @@
                     print "<script>location.href='?page=salas';</script>"; 
                 }
 
-
             break;
-
+            
         case "editar":
             $nome = $_POST["nome"];
             $capacidade_max = $_POST["capacidade_max"];
